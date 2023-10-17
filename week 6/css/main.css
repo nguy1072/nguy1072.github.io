@@ -48,9 +48,8 @@ nav ul a {
     /* 1 em * 20px(element font size) = 20px */
     width: 50%;
     height: 100vh;
-
-
-
+    /* height is 100% of the browser size and it is dynamic */
+    /* height: 100vh; */
 }
 
 /* Selecting HTML elements with class name */
