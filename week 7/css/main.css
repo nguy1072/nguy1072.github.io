@@ -1,0 +1,175 @@
+/*
+This is a CSS comment 
+Shortcut for adding the comment is command/ctrl + /
+*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    color:darkslategray; 
+    background-image: url(../image/white_brick_wall.png);
+}
+
+h1 {
+    color: cadetblue;
+}
+
+p {
+    background-color: antiquewhite;
+}
+
+/* Selecting multiple elements */
+h1, h2, h3, h4 {
+    text-decoration: underline; 
+}
+
+/* selecting child elements */
+/*remove teh bullets from the nav but keep bullets on merch and ingedients*/
+nav ul {
+    list-style: none;
+}
+
+/*Selecting child elements multiple levels*/
+nav ul a {
+    color: darkslategray;
+    text-decoration: none;
+}
+/* Selecting element with ID value */
+/* As a best practice, avoid using ID for styles */
+#treatoftheweek {
+    /* color image repeat position-x position-y */
+    background: cadetblue url(../image/bread.jpg)
+    no-repeat center; 
+    /* background-size */
+    background-size: cover;  
+    font-size: 1.25rem;
+    /* 16px * 1.25 = 20 px */
+    /* padding pushes the element away from teh walls */
+    padding: 1em;
+    /* 1 em * 20px(element font size) = 20px */
+    width: 50%;
+    height: 100vh;
+    /* height is 100% of the browser size and it is dynamic */
+    /* height: 100vh; */
+}
+
+/* Selecting HTML elements with class name */
+.blue-link {
+    background-color: darkslategray;
+    text-decoration: none;
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+.white-text {
+    color:antiquewhite;
+}
+
+/* Combinators */
+/* Direct child selector - will only select direct child of the parent */
+article>p {
+    font-size: 24px; 
+
+    /* CSS typography properties */
+    font-weight: bold; 
+    line-height: 1.5;
+    text-transform: lowercase; 
+    text-align: center;
+}
+
+/* Adjacent sibling selector - selects the element that is teh very next sibling to the selected element, IF any exist */
+h3+ul {
+    border: 1px solid black;
+}
+
+/* Sibling selector */
+h3~p {
+    text-transform: uppercase;
+}
+
+/* Attribute selector */
+[href="#treatoftheweek"] {
+    font-weight: bold;
+}
+
+[src$=".jpg"] {
+    border: 4px solid darkslategray;
+}
+
+/* pseudo classes */
+/* Styling the navvigation */
+nav ul a, 
+nav ul a:link, 
+nav ul a:visited {
+    background-color: antiquewhite;
+    /* horizontal, vertical, blur, spread, color */
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+/* Add class of current to HTML hoem link after adding hover and focus */
+nav ul .current, 
+nav ul a:hover, 
+nav ul a:focus {
+    text-decoration: underline; 
+}
+
+nav ul a:active {
+    box-shadow: 0 0 4px 2px black; 
+}
+
+/* First child and last child */
+aside ul li:first-child {
+    font-weight: bold;
+}
+section ol li:last-child {
+    font-weight: bold;
+}
+
+/* Styling a table */
+table {
+    border-collapse: collapse;
+}
+
+/* nth-child selectors - even/odd */
+tbody tr:nth-child(even) {
+    background-color: #d5836c;
+    
+}
+
+/* Using the nth-child with n */
+/* Where n is o,1,2,3 until the number of elements end */
+table th:nth-child(n),
+table td:nth-child(n) {
+    border: 1px solid black;
+}
+
+/*Using a formula in nth-child selectors */
+table td:nth-child(2n+1) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* CSS Specificity */
+/* Formula: inline style, ID, class, tag-name */
+/*                0       0     0       0     */
+
+footer {
+    background-color: aqua;
+}
+/* 0002 */
+body footer {
+    background-color: red;
+}
+
+article h2 {
+    text-transform: lowercase;
+}
+
+/*0001*/
+footer.size-footer {
+    background-color: antiquewhite;
+}
+/*0100*/
+#treatoftheweek {
+    font-size: 44px;
+}
