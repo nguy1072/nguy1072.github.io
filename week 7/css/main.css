@@ -8,7 +8,27 @@ body{
     color:darkslategray; 
     background-image: url(../image/white_brick_wall.png);
 }
+/* Box model example */
+section p {
+    width: 50%;
+    /* Single value = top/bottom/left/right */
+    /* 2 values = first value = top/ bottom, ssecond value 
+    = left/right */
+    padding: 5em .5em;
+    /* Top right bottom left */
+    margin: -1em 2em 2em 2em;
+}
 
+.container {
+    /* Create a container consists of everything inside the body tag */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+
+}
 h1 {
     color: cadetblue;
 }
@@ -28,8 +48,16 @@ nav ul {
     list-style: none;
 }
 
+nav ul li {
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
 /*Selecting child elements multiple levels*/
 nav ul a {
+    display: block;
     color: darkslategray;
     text-decoration: none;
 }
@@ -54,7 +82,10 @@ nav ul a {
 
 /* Selecting HTML elements with class name */
 .blue-link {
+    padding: 1.5em;
+    width: 300px;
     background-color: darkslategray;
+    color: antiquewhite;
     text-decoration: none;
 }
 
@@ -62,6 +93,25 @@ nav ul a {
     font-size: 24px;
 }
 
+/* Example of Float */
+article, 
+aside {
+    width: 80%;
+    background-color: rgba (255, 255, 255, 0.6)
+    border: 1px solid black;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    float: left;
+}
+
+aside {
+    width: 20%;
+}
+
+/* Clear float from the section */
+section {
+    clear: both;
+}
 .white-text {
     color:antiquewhite;
 }
