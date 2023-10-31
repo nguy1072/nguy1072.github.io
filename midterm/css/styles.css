@@ -1,0 +1,136 @@
+body {
+  background-color: #D5E9E7;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+/* Header style */
+.header {
+  position: relative;
+}
+
+.header-banner-image {
+  width: 100%;
+  height: 320px;
+}
+
+.header-title {
+  font-size: 40px;
+  font-weight: 500;
+  position: absolute;
+  color: white;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+/* nav style */
+nav {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 1px;
+  >a {
+    color: #000;
+    text-decoration-line: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 2px 0;
+    border-right: 1px solid #5F6F6E;
+  }
+}
+
+/* Remove border at the last a tag */
+.last-link {
+  border: none
+}
+
+/* description style */
+.description {
+  >img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    padding-right: 12px;
+    padding-bottom: 20px;
+  }
+}
+
+.title-description {
+  font-weight: 500;
+  font-size: 26px;
+  margin:28px 0 10px 0;
+}
+
+/* description style */
+.contact {
+  border: 1px solid #000;
+  padding: 20px 12px;
+}
+.question-visit {
+  margin:0;
+}
+
+/* Style for heading text of section */
+.section-heading {
+  font-weight: 500;
+  font-size: 24px;
+  margin:28px 0 10px 0;
+}
+
+/* Style for facts list */
+.fact-list {
+  padding-left: 12px;
+}
+
+/* Style for input */
+input, textarea {
+  background-color: #fff;
+  border: 1px solid #DDDDDD;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  resize: none;
+}
+
+.input-height {
+  height: 20px;
+}
+
+/* Style for option area */
+.visit-option {
+  margin-top: 12px;
+
+ >input {
+  width: fit-content;
+  padding-top: 4px;
+  height: auto;
+ }
+}
+
+/* Button submit form */
+.send-button {
+  margin-top: 10px;
+  background-color:transparent;
+  padding: 8px;
+  border: 1px solid black;
+  width: fit-content;
+}
+
+/* Style for copyright text */
+.copyright {
+  margin-top: 30px;
+  text-align: right;
+  font-size: 13px;
+}
