@@ -99,3 +99,66 @@ p {
     text-align: center;
     text-transform: uppercase;
 }
+
+/***** Mobile App section *****/
+.btn {
+    text-decoration: none; 
+    display: inline-block; 
+    padding: 20 px;
+    border: 1px solid grey; 
+    border-radius: 6px; 
+}
+
+.btn: hover,
+.btn: focus {
+    background-color: #00add8; 
+    color: inherit; 
+}
+
+/***** FOOTER *****/
+.site-footer {
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 2px solid #00add8; 
+}
+
+.copy {
+    text-align: right; 
+}
+
+/************
+Desktop styles
+*************/
+
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+    .mobile-logo {
+        display: none;
+    }
+    .desktop-logo {
+        display: inline-block;
+        max-width: 300px;
+    }
+    .banner {
+        background-image: url(../images/smog-desktop.jpg);
+    }
+    .banner h1 {
+        color: white; 
+    }
+
+    /********* App Section **********/
+    .app img {
+        width: 40%;
+        float: left; 
+        margin-right: 1em;
+    }
+    .app .btn {
+        float: right; 
+    }
+
+
+
+
+}
