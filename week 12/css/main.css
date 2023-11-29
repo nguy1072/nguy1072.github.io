@@ -1,0 +1,29 @@
+/*
+font-family: "Playfair Display, cursive;
+font-family: "Poppins", san-serif;
+*/
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+header, main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+
+}
+h1, h2 {
+    font-family: "Playfair Display", cursive;
+}
+
+.fa-code {
+    font-size: 6rem;
+    color: darkorchid; 
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; 
+    display: black;
+}
