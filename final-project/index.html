@@ -4,56 +4,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="./css/reset.css" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css" />
-  <title>Three Star Media</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+  <!-- font family -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css" />
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Three Star Media</title>
 </head>
 
 <body>
   <!-- Nav menu -->
   <nav class="nav">
-    <ul>
-      <li>
+    <ul class="nav-ul content-width">
+      <li class="nav-edge nav-logo">
         <a href="">
           <img src="./images/logo.png" alt="logo" class="logo" />
         </a>
       </li>
-      <li><a href="">Home</a></li>
-      <li><a href="">About Us</a></li>
-      <li><a href="">Services</a></li>
-      <li><a href="">Team</a></li>
-      <li><a href="">Contact</a></li>
-      <li>
-        <input placeholder="Search" />
-        <i class="fa-solid fa-magnifying-glass"></i>
+      <li class="current"><a href="">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#service">Services</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="nav-edge">
+        <input placeholder="Search" class="search-input" />
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass" style="color: #c78c06;"></i>
+        </div>
       </li>
     </ul>
   </nav>
 
-  <!-- Header area -->
+  <!-- Header area with banner image and center content is on top -->
   <header>
     <img src="./images/main-banner.jpg" alt="banner" class="header-img" />
     <div class="header-description content-width">
-      <h1>Welcome to Three Star Media</h1>
-      <h5>
+      <h1 class="header-title">Welcome to Three Star Media</h1>
+      <h5 class="header-note">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
         scrambled it to make a type specimen book
       </h5>
-      <button>Connect with us</button>
-      <i class="fa-solid fa-play"></i>
+      <button class="header-connect-button">
+        <span class="connect-button-text"> Connect with us </span>
+        <i class="fa-solid fa-caret-right fa-xl"></i>
+      </button>
     </div>
   </header>
 
   <!-- About area -->
-  <section class="about">
+  <section class="about" id="about">
     <div class="content-width about-content">
       <img src="./images/about-us.jpg" alt="about" class="about-img" />
       <div class="about-text">
-        <h2>About us</h2>
+        <h2 class="about-title">About us</h2>
         <h4>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text
@@ -64,96 +70,115 @@
     </div>
   </section>
 
-  <!-- Services area -->
-  <section class="content-width">
-    <h2>Our Services</h2>
+  <!-- Services area with grid items -->
+  <section class="content-width" id="service">
+    <h2 class="section-title">Our Services</h2>
     <div class="grid-service">
       <div class="grid-service-item first-row-service">
         <img src="./images/digital.jpg" />
-        <h3>Digital Transformation</h3>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text
-          ever since the 1500s, when an unknown printer took a galley of type
-          and scrambled it to make a type specimen book
-        </p>
-        <button>Digital Plans</button>
-        <i class="fa-solid fa-play"></i>
+        <div class="service-detail">
+          <h3 class="service-title">Digital Transformation</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book
+          </p>
+          <button class="service-button"><span> Digital Plans </span> 
+            <i class="fa-solid fa-caret-right fa-xl"
+              style="color: #ffffff;"></i></button>
+        </div>
       </div>
 
       <div class="grid-service-item first-row-service">
         <img src="./images/marketing.jpg" />
-        <h3>Marketing</h3>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text
-          ever since the 1500s, when an unknown printer took a galley of type
-          and scrambled it to make a type specimen book
-        </p>
-        <button>Marketing Plans</button>
-        <i class="fa-solid fa-play"></i>
+        <div class="service-detail">
+          <h3 class="service-title">Marketing</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book
+          </p>
+          <button class="service-button">
+            <span> Marketing Plans </span>
+            <i class="fa-solid fa-caret-right fa-xl" style="color: #ffffff;"></i>
+          </button>
+        </div>
       </div>
 
       <div class="grid-service-item second-row-service">
         <img src="./images/video.jpg" />
-        <h3>Video Production</h3>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text
-          ever since the 1500s, when an unknown printer took a galley of type
-          and scrambled it to make a type specimen book
-        </p>
-        <button>Video Plans</button>
-        <i class="fa-solid fa-play"></i>
+        <div class="service-detail">
+          <h3 class="service-title">Video Production</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book
+          </p>
+          <button class="service-button"><span> Video Plans </span>
+            <i class="fa-solid fa-caret-right fa-xl" style="color: #ffffff;"></i>
+          </button>
+        </div>
       </div>
 
       <div class="grid-service-item second-row-service">
         <img src="./images/web.jpg" />
-        <h3>Web Development</h3>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text
-          ever since the 1500s, when an unknown printer took a galley of type
-          and scrambled it to make a type specimen book
-        </p>
-        <button>Web Plans</button>
-        <i class="fa-solid fa-play"></i>
+        <div class="service-detail">
+          <h3 class="service-title">Web Development</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book
+          </p>
+          <button class="service-button"><span>Web Plans</span> <i class="fa-solid fa-caret-right fa-xl"
+              style="color: #ffffff;"></i></button>
+        </div>
       </div>
       <div class="grid-service-item second-row-service">
         <img src="./images/print.jpg" />
-        <h3>Print</h3>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text
-          ever since the 1500s, when an unknown printer took a galley of type
-          and scrambled it to make a type specimen book
-        </p>
-        <button>Print Plans</button>
-        <i class="fa-solid fa-play"></i>
+        <div class="service-detail">
+          <h3 class="service-title">Print</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book
+          </p>
+          <button class="service-button">
+            <span> Print Plans </span>
+            <i class="fa-solid fa-caret-right fa-xl" style="color: #ffffff;"></i>
+          </button>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Vision area -->
+  <!-- Vision area with image background and description is on top-->
   <section class="vision">
-    <h2>Our vision</h2>
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting
-      industry. Lorem Ipsum has been the industry's standard dummy text ever
-      since the 1500s, when an unknown printer took a galley of type and
-      scrambled it to make a type specimen book
-    </p>
-    <button>Learn More</button>
-    <i class="fa-solid fa-play"></i>
+    <div class="vision-content content-width">
+      <h2 class="vison-title">Our vision</h2>
+      <p class="vision-detail">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a
+      </p>
+      <button class="vision-button"><span> Learn More </span>
+      <i class="fa-solid fa-caret-right fa-xl" style="color: #ffffff;"></i>
+    </button>
+    </div>
   </section>
 
-  <!-- Team area -->
-  <section class="content-width">
-    <h2>Our Team</h2>
+  <!-- Team area with grid items-->
+  <section class="content-width" id="team">
+    <h2 class="section-title">Our Team</h2>
     <div class="team-item">
       <img src="./images/john.jpg" />
       <div class="team-text">
-        <h3>John Doe</h3>
+        <h3 class="team-name">John Doe</h3>
         <h4 class="team-position">CEO and Co-owner</h4>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -163,46 +188,46 @@
         </p>
       </div>
     </div>
-    <div>
-      <h3>Bob Rite</h3>
-      <h4 class="team-position">CFO and Co-owner</h4>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text
-        ever since the 1500s, when an unknown printer took a galley of type
-        and scrambled it to make a type specimen book
-      </p>
-    </div>
-    <img src="./images/bob.jpg" alt="team" class="team-img" />
+    <div class="team-item team-item2">
+      <div class="team-text">
+        <h3 class="team-name">Bob Rite</h3>
+        <h4 class="team-position">CFO and Co-owner</h4>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+          ever since the 1500s, when an unknown printer took a galley of type
+          and scrambled it to make a type specimen book
+        </p>
+      </div>
+      <img src="./images/bob.jpg" alt="team" class="team-img" />
     </div>
   </section>
 
   <!-- Contact area -->
-  <section class="content-width">
-    <h2>Contact us</h2>
+  <section class="content-width" id="contact">
+    <h2 class="section-title">Contact us</h2>
     <div class="grid-contact">
-      <div class="first-row-contact">
-        <h3>Send us a message</h3>
-        <form>
+      <div class="contact-1">
+        <h3 class="contact-title">Send us a message</h3>
+        <form class="contact-form">
           <label for="name">Full Name</label>
           <input class="form-input" type="text" id="name" name="name" />
           <label for="email">Email</label>
           <input class="form-input" type="text" id="email" name="email" />
           <label for="message">Message</label>
           <textarea type="text" id="message" name="message" rows="8" class="form-input"></textarea>
-          <input class="send-choice-button" name="form" type="submit" value="Send" />
+          <input class="button-send" name="form" type="submit" value="Send" />
         </form>
       </div>
-      <div class="first-row-contact">
-        <h3>Location</h3>
-        <!-- Here is the map -->
-        <div class="map"><iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9442698268513!2d-75.75750062394229!3d45.34993724105562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1701216426337!5m2!1sen!2sca"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      <div class="contact-2">
+        <h3 class="contact-title">Location</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944269826863!2d-75.75750062387444!3d45.34993724105539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2s!4v1701353891228!5m2!1sen!2s"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <div class="second-row-contact">
-        <h3>Hour of Operation</h3>
+      <div class="contact-3">
+        <h3 class="contact-title">Hour of Operation</h3>
         <table>
           <thead>
             <tr>
@@ -227,10 +252,11 @@
 
   <!-- Footer area -->
   <footer>
-    <p>
-      © Copyright Three Star Media, 2020 All images are taken from
-      <span>Unsplash</span>
-    </p>
+    <p class="content-width">
+      © Copyright Three Star Media, 2020 <br /><br />
+      All images are taken from
+      <a href="https://unsplash.com/" target="_blank">Unsplash</Link>
+      </a>
   </footer>
 </body>
 
