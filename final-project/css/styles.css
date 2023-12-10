@@ -1,0 +1,440 @@
+/* set max width of some elements and centerlize */
+.content-width {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+/* nav style area */
+.nav {
+  background-color: #222;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  margin: 0 12px;
+
+  > li {
+    list-style: none;
+    display: flex;
+    padding: 12px 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+
+    > a {
+      text-decoration-line: none;
+      color: #c78c06;
+    }
+
+    /* first child logo and last child search-input aren't highlight whenn hovering */
+    &:hover:not(:last-child):not(:first-child) {
+      background-color: #c78c06;
+
+      > a {
+        color: #000000;
+      }
+    }
+  }
+}
+
+/* logo is at the start instead of center */
+.nav-logo {
+  background-color: #c78c06;
+  justify-content: flex-start !important;
+}
+
+.current {
+  background-color: #c78c06;
+  > a {
+    color: #000000 !important;
+  }
+}
+
+.search-input {
+  height: 40px;
+  height: 26px;
+  width: 100%;
+  border: none;
+}
+
+.search-icon {
+  height: 26px;
+  border: 1px solid #c78c06;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+/* header style area */
+header {
+  position: relative;
+  display: flex;
+}
+
+.header-img {
+  height: 500px;
+  width: 100%;
+}
+
+/* absolute the description content */
+.header-description {
+  position: absolute;
+  height: 360px;
+  background-color: rgba(34, 34, 34, 0.6);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  top: 50px;
+  margin-right: auto;
+  padding: 20px !important;
+}
+
+.header-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.header-note {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.header-connect-button {
+  border: none;
+  background-color: #c78c06;
+  padding: 24px 32px;
+}
+
+.connect-button-text {
+  font-size: 16px;
+}
+
+/* about style area */
+.about {
+  background-color: #ffe6ac;
+  padding: 12px;
+}
+
+/* arrange content vertically */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about-title {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-top: 26px;
+  margin-bottom: 8px;
+}
+
+.grid-service {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-service-item {
+  background-color: #ffe6ac;
+
+  > img {
+    width: 100%;
+  }
+}
+
+.first-row-service {
+  grid-column: span 3;
+}
+
+.second-row-service {
+  grid-column: span 2;
+}
+
+.service-detail {
+  padding: 12px;
+}
+
+.service-title {
+  font-size: 26px;
+}
+
+.service-button {
+  background-color: #000000;
+  border: none;
+  height: 60px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  gap: 10px;
+
+  > span {
+    font-size: 16px;
+    color: #ffffff;
+  }
+}
+
+/* vision area style */
+.vision {
+  background-image: url('../images/vision.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
+
+.vision-content {
+  padding: 20px 12px 16px 12px;
+}
+
+.vison-title {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.vision-detail {
+  color: #ffffff;
+}
+
+.vision-button {
+  border: 1px solid #c78c06;
+  padding: 20px 16px;
+  background-color: rgba(34, 34, 34, 0.6);
+  margin-top: 16px;
+
+  > span {
+    color: #ffffff;
+    font-size: 18px;
+  }
+}
+
+/* team style area */
+.team-item {
+  display: flex;
+  flex-direction: column;
+}
+/* reverse column */
+.team-item2 {
+  flex-direction: column-reverse;
+}
+
+.team-text {
+  background-color: #ffe6ac;
+  flex: 1;
+  padding: 12px;
+}
+
+.team-name {
+  font-size: 28px;
+}
+
+.team-position {
+  border-bottom: 2px solid #c78c06;
+  padding-bottom: 2px;
+  margin: 6px 0;
+  font-size: 18px;
+}
+
+.team-img {
+  flex: 1;
+}
+
+/* contact style area */
+.grid-contact {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+}
+
+/* style for contact item, ensure the order of items */
+.contact-1 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 1;
+  grid-column-end: 1;
+}
+
+.contact-2 {
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.contact-3 {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 1;
+}
+
+.contact-title {
+  font-size: 24px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.button-send {
+  border: none;
+  margin-top: 8px;
+  width: fit-content;
+  background-color: #000000;
+  color: #c78c06;
+  font-size: 16px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  padding: 12px;
+}
+
+table {
+  width: 100%;
+}
+
+thead {
+  background-color: #ffe6ac;
+}
+
+/* footer style area */
+footer {
+  background-color: #222;
+  padding: 20px;
+  margin-top: 20px;
+
+  > p,
+  a {
+    color: #c78c06;
+  }
+}
+
+/* Media screen style min width 760px*/
+@media screen and (min-width: 760px) {
+  /* main nav */
+  .nav-ul {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .nav-logo {
+    background-color: transparent;
+  }
+
+  .search-input {
+    width: 180px;
+    flex: 1;
+  }
+
+  /* header */
+  .header-description {
+    padding: 12px;
+  }
+
+  .header-title {
+    font-size: 60px;
+  }
+
+  .header-connect-button {
+    margin-top: 30px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  /* about area */
+  .about-content {
+    flex-direction: row;
+  }
+  .about-title {
+    font-size: 40px;
+  }
+
+  .about-img {
+    width: 50%;
+  }
+
+  /* team */
+  .team-item {
+    flex-direction: row;
+  }
+
+  /* service */
+  .grid-service {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .service-button {
+    width: 100%;
+
+    > span {
+      font-size: 18px;
+    }
+  }
+
+  /* contact */
+  .grid-contact {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* style grid for contact items */
+  .contact-1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 1;
+    grid-column-end: 1;
+  }
+
+  .contact-2 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 2;
+  }
+
+  .contact-3 {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .content-width {
+    padding: 0;
+  }
+}
